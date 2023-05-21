@@ -1,0 +1,137 @@
+.formInput{
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+.contactForm {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.contactLabel {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.formInput {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.formInput:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+
+.contact{
+  background-color: #4f5156;
+  width: 50%;
+  height: 100%;
+  margin:5%25%;
+  border-radius: 15px;
+  box-shadow: 5px 5px rgb(249, 247, 247);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+
+  background: linear-gradient(
+    to right bottom,
+    rgb(33, 28, 28),
+    rgba(206, 226, 232, 0.8)
+  );
+  box-shadow: 2px 5px 20px rgb(248, 245, 245);
+  backdrop-filter: blur(20px);
+}
+
+
+.segment{
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.contactForm{
+  padding: 16px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.formInput {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.cta {
+  position: relative;
+  float: right;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  margin:0 0 10px 0;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+  
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(10, 10, 10);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
