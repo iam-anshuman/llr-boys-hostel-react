@@ -4,21 +4,29 @@ import {fireDB} from "../DB.js";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import MyModal from "./MyModal";
+
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [roomNo, setRoomNo] = useState("");
   const [phone, setPhone] = useState("");
   const [query, setQuery] = useState("");
+  const [isSubmit,setIsSubmit] = useState(false)
 
   const handleClick = async()=>{
     try{
       await addDoc((collection(fireDB,"Queries")),{
         "Name":name,
-        "Room number":roomNo,
-        "Phone number":phone,
+        "Room_number":roomNo,
+        "Phone_number":phone,
         "Query":query
       });
+      setIsSubmit(true);
+      setName("");
+      setRoomNo("");
+      setPhone("");
+      setQuery("");
     } catch (error){
       console.error(error)
     }
@@ -48,7 +56,7 @@ export default function Contact() {
           <label className="contactLabel">
             <input
               className="form formInput"
-              type="number"
+              type="tel"
               id="hostelerRoomNum"
               onChange={(e)=>{setRoomNo(e.target.value)}}
               value={roomNo}
@@ -76,16 +84,16 @@ export default function Contact() {
               placeholder="Enter problem or query"
             />
           </label>
-          <Link to="/" className="cta" onClick={handleClick}>
+          <Link to="/Contact" className="cta " onClick={handleClick}>
             <span>SUBMIT</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
           </Link>
-        </form>
+          </form>
       </section>
-
+<MyModal isSubmit={isSubmit} closingButton={setIsSubmit}/>
       <Footer />
     </>
   );
