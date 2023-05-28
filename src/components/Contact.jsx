@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {collection,addDoc} from "firebase/firestore"
+import {collection,addDoc,serverTimestamp} from "firebase/firestore"
 import {fireDB} from "../DB.js";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -20,7 +20,8 @@ export default function Contact() {
         "Name":name,
         "Room_number":roomNo,
         "Phone_number":phone,
-        "Query":query
+        "Query":query,
+        "timestamp":serverTimestamp()
       });
       setIsSubmit(true);
       setName("");
