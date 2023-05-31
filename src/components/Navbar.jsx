@@ -24,7 +24,7 @@ export default function Navbar() {
               <Link to="/Gallery" className="nav-link">Gallery</Link>
           </li>
         <li className="nav-item">
-          <Link to="/Login" className="nav-link">Login</Link>
+          <Link to="/Payments" className="nav-link">Payments</Link>
         </li>
 
 
@@ -40,8 +40,8 @@ export default function Navbar() {
           
 <li><Link to="/Gallery">Gallery</Link></li>
 <li><Link to="/Mess">Mess</Link></li>
+<li><Link to="/Payments">Payments</Link></li>
 <li><Link to="/Contact">Contact</Link></li>
-<li><Link to="/Login">Login</Link></li>
 </ul>
 </div>
 </nav>

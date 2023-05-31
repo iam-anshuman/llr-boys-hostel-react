@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
+    const date = new Date();
   return (
-    <>
-  <footer className="footer text-center bg-dark py-3 bg-light ">
-    <div className="container">
-      <span className="text-muted">©copyright 2023 || All Rights Reserved</span>
-    </div>
-  </footer>
-    </>
-  )
-}
+      <footer className="footer">
+        <div className="container">
+          <span className="text-muted">Copyright @{date.getFullYear()} LLR BOys Hostel</span>
+        </div>
+      </footer>
+  );
+};
+
+export default Footer;

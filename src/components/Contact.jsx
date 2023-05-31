@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {collection,addDoc,serverTimestamp} from "firebase/firestore"
+import {collection,addDoc,serverTimestamp} from "firebase/firestore";
 import {fireDB} from "../DB.js";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -94,7 +94,8 @@ export default function Contact() {
           </Link>
           </form>
       </section>
-<MyModal isSubmit={isSubmit} closingButton={setIsSubmit}/>
+      <MyModal isSubmit={isSubmit} closingButton={setIsSubmit}/>
+
       <Footer />
     </>
   );
