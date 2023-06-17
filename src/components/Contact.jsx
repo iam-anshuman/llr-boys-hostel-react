@@ -85,7 +85,7 @@ export default function Contact() {
               placeholder="Enter problem or query"
             />
           </label>
-          <Link to="/Contact" className="cta " onClick={handleClick}>
+          <Link to="/Contact" className="cta no-underline" onClick={handleClick}>
             <span>SUBMIT</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>

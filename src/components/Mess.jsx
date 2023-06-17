@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Search from "./Search";
 
 export default function Mess() {
   return (
@@ -85,7 +84,7 @@ export default function Mess() {
 </div>
 <br/>
 
-        <Search />
+        {/*<Search />*/}
   <div className="container">
     <div id="studentDetails"></div>
   </div>
@@ -95,7 +94,7 @@ export default function Mess() {
 
                 <div className="card m-4 " style={{maxHeight:"10rem"}}>
                     <div className="card-header text-white">
-                        Notice
+                        Mess Bills
                     </div>
         <ol className="overflow-auto" > 
             
@@ -117,11 +116,11 @@ export default function Mess() {
                 Mess Rules
             </div>
             <ul className="overflow-auto" id="rules">
-                <li>Rule 1</li>
-                <li>Rule 2</li>
-                <li>Rule 3</li>
-                <li>Rule 4</li>
-                <li>Rule 5</li>
+                <li><strong>Clean up after yourself:</strong> One of the most important rules for maintaining a tidy dorm room is to clean up after yourself. Whether it's dirty dishes, trash, or personal belongings, make it a habit to put things back in their designated places and dispose of trash appropriately. By taking responsibility for your own mess, you contribute to a cleaner living environment for everyone.</li>
+                <li><strong>Establish a cleaning schedule:</strong> Create a cleaning schedule with your roommates to ensure that regular cleaning tasks are shared and no one is burdened with all the responsibilities. Assign specific days for tasks such as vacuuming, taking out the trash, and wiping down surfaces. By sticking to a schedule, you'll prevent the mess from piling up and maintain a more organized living space.</li>
+                <li><strong>Limit clutter:</strong> Dorm rooms often have limited space, so it's important to keep clutter to a minimum. Avoid accumulating unnecessary items and regularly declutter your room by donating or discarding items you no longer need. Keep surfaces clear of excessive belongings to create a more open and spacious environment.</li>
+                <li><strong>Communicate with your roommates:</strong> Effective communication with your roommates is crucial for maintaining a clean and organized dorm room. Discuss expectations and establish guidelines for cleanliness and shared responsibilities. If someone is not adhering to the agreed-upon rules, address the issue in a respectful and constructive manner to find a solution together.</li>
+                <li><strong>Practice good hygiene:</strong> Personal hygiene plays a significant role in keeping a dorm room clean and fresh. Encourage everyone in the dorm to practice good hygiene habits, such as regularly doing laundry, cleaning bedding, and maintaining personal cleanliness. This helps prevent odors, dirt, and bacteria from accumulating in the living space, contributing to a more pleasant and hygienic environment for everyone.</li>
             </ul>
         </div>
     </div>
